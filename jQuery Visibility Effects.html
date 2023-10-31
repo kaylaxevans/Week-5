@@ -1,0 +1,42 @@
+jQuery Visibility Effects
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</body>
+</html>
+    <style> 
+    #box {
+        background-color:blueviolet
+        width 400px;
+        height: 20px;
+    }
+    
+    </style>
+</head>
+<body>
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show </button>
+    <button id="btn3">Toggle</button>
+    <div id="box"></div>
+
+    <script>
+        $(document).ready(function() {
+            $('#btn1').click(function() {
+                $('#box').hide();
+            });
+
+            $('#btn2').click(function() {
+                $('#box').show();
+            });
+
+            $('#btn3').click(function() {
+                $('#box').toggle();
+            });
+        });
+    </script>

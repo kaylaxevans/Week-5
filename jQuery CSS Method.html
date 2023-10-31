@@ -1,0 +1,28 @@
+jQuery CSS Method
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <p id="p1">This is a paragraph element.</p>
+    <p id="p2">This is another paragraph element.</p>
+    
+    <script>
+        $(document).ready(function(){
+            // Select the element with id "p1" and change its background color to pink
+            $('p#p1').css('background-color', 'pink');
+
+            // Select the element with id "p2" and change its background color, font size, and color
+            $('p#p2').css({
+                'background-color': 'pink',  // Change background color to pink
+                'font-size': '20px',         // Change font size to 20px
+                'color': 'black'             // Change font color to black
+            });
+        });
+    </script>
+</body>
+</html>

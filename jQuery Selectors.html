@@ -1,0 +1,33 @@
+jQuery Selectors 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <p>Element selector</p>
+    <p id="some-id">ID selector</p>
+    <p class="real-class">Class selector</p>
+    <div class="foo">
+        <p>This is a DIV with class "foo" and a P element inside.</p>
+    </div>
+    <div id="#some-id" class="foo">
+        <h1 class="bar">This is a DIV with class "foo" and an H1 element with class "bar" inside.</h1>
+    </div>
+    <h1>This is an H1 element without class "bar"</h1>
+    
+    <script>
+        //jQuery Selectors
+        $(document).ready(function(){
+            $('p').css('background-color', 'pink');
+            $('#some-id').css('background-color', 'yellow' );
+            $('.real-class').css('background-color', 'orange');
+            $('div.foo').has('p').css('border', '2px solid red');
+            $('h1').not('.bar').css('background-color', 'green');
+        });
+    </script>
+</body>
+</html>

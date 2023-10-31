@@ -1,0 +1,42 @@
+jQuery Animate Method
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #box {
+            background-color: green;
+            position: absolute;
+            width: 300px;
+            height: 100px;
+            left: 1px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Move to the Right</button>
+    <button id="btn2">Move to the Left</button>
+    <div id="box"></div>
+    <script>
+        $(document).ready(function() {
+            $('#btn1').click(function() {
+                $('#box').animate({
+                    width: '300px',
+                    left: '100px'
+                }, 'slow');
+            });
+            $('#btn2').click(function() {
+                $('#box').animate({
+                    width: '200px',
+                    left: '8px'
+                }, 'slow');
+            });
+        });
+    </script>
+</body>
+</html>
